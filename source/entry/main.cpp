@@ -18,9 +18,14 @@ void Game::init() {
     SetTargetFPS(144);
 
     while (!WindowShouldClose()) {
+        float dt = GetFrameTime();
+        Vector2 dt = GetMouseDelta();
+        Vector2 mouse = GetMousePosition();
         BeginDrawing();
         ClearBackground(BLACK);
         BeginMode2D(cam.camera);
+
+
 
         EndMode2D();
         EndDrawing();
