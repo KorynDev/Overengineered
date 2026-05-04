@@ -14,10 +14,13 @@ void Cam::pan(float speed) {
         mx -= dt.x * speed;
         my -= dt.y * speed;
     }
-    camera.target = { mx, my };
+    camera.target.x += (mx - camera.target.x) * 0.15f;
+    camera.target.y += (my - camera.target.y) * 0.15f;
 }
 
 void Cam::zoom() {
+    float wheel = GetMouseWheelMove();
+
     camera.zoom += wheel * 0.1f;
     camera.zoom = Clamp(camera.zoom, 0.2f, 5.0f);
 }

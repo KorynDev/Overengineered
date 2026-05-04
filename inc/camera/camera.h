@@ -8,7 +8,6 @@ public:
     void zoom();
     Camera2D camera;
     Vector2 mouse = GetMousePosition();
-    float wheel = GetMouseWheelMove();
     float mx = 0;
     float my = 0;
 };

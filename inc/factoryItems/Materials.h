@@ -28,6 +28,12 @@ namespace GlobalMaterials {
             65,
             14
         };
+        Material DiamondOre {
+            "Diamond Ore",
+            "Now this is a very big step to gold ore, makes a fat chunk of cash!",
+            120,
+            18
+        };
     };
     namespace CompressedOres {
         Material CompressedStoneOre {
@@ -47,6 +53,12 @@ namespace GlobalMaterials {
             "A denser, more valuable version of gold ore brings in a very big chunk of cash!",
             200,
             23
+        };
+        Material CompressedDiamondOre {
+            "Compressed Diamond Ore",
+            "A denser, more valuable version of Diamond ore brings in a incredibly big chunk of cash!",
+            280,
+            27
         };
     };
 };
